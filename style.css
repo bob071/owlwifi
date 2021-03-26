@@ -14,8 +14,8 @@ body.sub {
 #hero {
     text-align: center;
     padding: 100px 20px;
-    /* background-color: #f7cac9; */
-    background: url('./img/biljana-martinic-1311746-unsplash.jpg') no-repeat center center;
+    background-color: #f7cac9;
+    /* background: url('./img/biljana-martinic-1311746-unsplash.jpg') no-repeat center center; */
     background-size: cover;
     color: #FFF;
 }
