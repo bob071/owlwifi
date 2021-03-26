@@ -101,7 +101,7 @@ h3 {
 
 .main a.btn:hover {
     background-color: #f7cac9;
-    color: #E37222;
+    color: #FFF;
 }
 
 .links {
@@ -131,7 +131,7 @@ h3 {
 .links a span {
     display: block;
     padding: 20% 0;
-    color: #FFF;
+    color: #E37222;
     font-size: 2rem;
 }
 
