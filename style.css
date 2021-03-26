@@ -8,9 +8,9 @@ body.sub {
 }
 
 .navbar {
-  #grad {background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));}
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
     /* background-color: #E37222; */
-}
+  }
 
 #hero {
     text-align: center;
