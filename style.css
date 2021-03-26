@@ -41,7 +41,7 @@ body.sub {
 }
 
 #title {
-    color: #FFF;
+    color: #E37222;
 }
 
 #title h1 {
@@ -131,7 +131,7 @@ h3 {
 .links a span {
     display: block;
     padding: 20% 0;
-    color: #E37222;
+    color: #FFF;
     font-size: 2rem;
 }
 
