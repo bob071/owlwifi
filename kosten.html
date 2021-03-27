@@ -1,0 +1,186 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69056609-2"></script>
+    <script src="slider.js"></script>
+
+    <meta charset="utf-8">
+
+    <title>Kosten van OWL WiFi</title>
+    <meta name="description" content="De OWL WiFi">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+</head>
+
+<body class="sub text-center">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/wordmark.png" height="30" alt="De OWL WiFi">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="./kosten.html">Kosten</a>
+                    <a class="nav-item nav-link active" href="./overons.html">Over ons</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="title" class="about">
+        <h1>Kosten van OWL WiFi</h1>
+    </div>
+
+    <div class="main text-left", class="mt-2">
+      <h3> Kosten OWL WiFi </h3>
+      <h3 class="mt-5">Prijsopbouw</h3> <!-- <img src="./img/HR-KLMME191098.jpg" class=profile> -->
+      <img src="./img/Element-1.png" class='divider' />
+      <div class="pakketdescription mt-3">
+          <p class="intro">Afhankelijk van de grootte van het huis, jullie wensen, en het aantal huisgenoten kan dit variëren.</p>
+          <p>Maar om jullie alvast een idee te geven wat dit per persoon kost kun je de onderstaande tool gebruiken. Wij kunnen de apparatuur aan jullie leasen, of jullie kunnen de initiële aanschaf zelf doen. Dat laten we altijd netjes aan jullie over! Factoren die meewegen in de prijs zijn: het aantal gebruikers, de grootte van jullie huis (inclusief het aantal verdiepingen), en jullie specifieke wensen. Samen komen we er altijd uit!</p>
+      </div>
+    </div>
+
+
+    <div id="sliderContainer">
+      <div class="tick-slider">
+          <div class="tick-slider-header">
+              <h5><label for="bewonersSlider">Totaal aantal huisgenoten</label></h5>
+              <h5>#</h5>
+          </div>
+          <div class="tick-slider-value-container">
+              <div id="bewonersLabelMin" class="tick-slider-label">0</div>
+              <div id="bewonersLabelMax" class="tick-slider-label">30 of meer</div>
+              <div id="bewonersValue" class="tick-slider-value"></div>
+          </div>
+          <div class="tick-slider-background"></div>
+          <div id="bewonersProgress" class="tick-slider-progress"></div>
+          <div id="bewonersTicks" class="tick-slider-tick-container"></div>
+          <input
+              id="bewonersSlider"
+              class="tick-slider-input"
+              type="range"
+              min="0"
+              max="30"
+              step="1"
+              value="7"
+              data-tick-step="1"
+              data-tick-id="bewonersTicks"
+              data-value-id="bewonersValue"
+              data-progress-id="bewonersProgress"
+              data-handle-size="18"
+              data-min-label-id="bewonersLabelMin"
+              data-max-label-id="bewonersLabelMax"
+          />
+      </div>
+      <div class="tick-slider">
+        <div class="tick-slider-header">
+            <h5><label for="sizeSlider"></label>Aantal verdiepingen van jullie huis</h5>
+            <h5>#</h5>
+        </div>
+        <div class="tick-slider-value-container">
+            <div id="verdiepingenLabelMin" class="tick-slider-label">1</div>
+            <div id="verdiepingenLabelMax" class="tick-slider-label">6</div>
+            <div id="verdiepingenValue" class="tick-slider-value"></div>
+        </div>
+        <div class="tick-slider-background"></div>
+        <div id="verdiepingenProgress" class="tick-slider-progress"></div>
+        <div id="verdiepingenTicks" class="tick-slider-tick-container"></div>
+        <input
+            id="verdiepingenSlider"
+            class="tick-slider-input"
+            type="range"
+            min="1"
+            max="6"
+            step="1"
+            value="3"
+            data-tick-step="1"
+            data-tick-id="verdiepingenTicks"
+            data-value-id="verdiepingenValue"
+            data-progress-id="verdiepingenProgress"
+            data-handle-size="18"
+            data-min-label-id="verdiepingenLabelMin"
+            data-max-label-id="verdiepingenLabelMax"
+          />
+      </div>
+      <div class="tick-slider">
+        <div class="tick-slider-header">
+            <h5><label for="sizeSlider"></label>Hoeveel vaste internetkabels willen jullie?</h5>
+            <h5>#</h5>
+        </div>
+        <div class="tick-slider-value-container">
+          <div id="lanLabelMin" class="tick-slider-label">1</div>
+          <div id="lanLabelMax" class="tick-slider-label">6</div>
+          <div id="lanValue" class="tick-slider-value"></div>
+        </div>
+        <div class="tick-slider-background"></div>
+        <div id="lanProgress" class="tick-slider-progress"></div>
+        <div id="lanTicks" class="tick-slider-tick-container"></div>
+        <input
+        id="lanSlider"
+        class="tick-slider-input"
+        type="range"
+        min="1"
+        max="6"
+        step="1"
+        value="1"
+        data-tick-step="1"
+        data-tick-id="lanTicks"
+        data-value-id="lanValue"
+        data-progress-id="lanProgress"
+        data-handle-size="18"
+        data-min-label-id="lanLabelMin"
+        data-max-label-id="lanLabelMax"
+        />
+      </div>
+
+  </div>
+
+
+  <a class="btn btn-lg mt-5" href="./kosten.html">Bekijk onze kosten</a>
+  <a class="btn btn-lg mt-5", href="mailto:info@deOWL WiFi.com?subject=OWL WiFi Website link kosten">Neem nu contact met ons op</a>
+
+  <div class="footer text-left">
+      <div class="container">
+          <div class="row">
+              <div class="col-md">
+                  <h5>De OWL WiFi</h5>
+                  <a href="mailto:info@deOWL WiFi.com?subject=OWL WiFi Website link">info@deOWL WiFi.com</a><br /><br />
+                  Haarlemmerstraat 146<br />
+                  2312GE Leiden
+              </div>
+              <div class="col-md">
+                  <h5>Info</h5>
+                  <b>KVK Nummer:</b> 74641662<br />
+                  <b>BTW nummer:</b> NL859977985B01
+              </div>
+              <div class="col-md">
+                  <h5>Online</h5>
+                  <a href="https://www.instagram.com/OWL WiFi/" target="_blank">Instagram</a>
+              </div>
+              <div class="col-md">
+                  <h5>Onze partners</h5>
+                  <a href="https://www.noordmanwinkel.nl/pagina/over-la-bordelaise-wijnen"target="_blank">Noordman & La Bordelaise</a><br />
+                  <a href="https://www.lesgenereux.nl"target="_blank">Wijnimport Les Genereux</a><br />
+                  <a href="https://www.bootjesenbroodjes.nl"target="_blank">Bootjes & Broodjes</a><br />
+                  <a href="https://www.verguldekruik.nl"target="_blank">Café de Vergulde Kruik</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
