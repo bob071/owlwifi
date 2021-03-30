@@ -31,7 +31,10 @@ function updateValue(slider) {
 let value = document.getElementById(slider.dataset.valueId);
 
 value.innerHTML = "<div>" + slider.value + "</div>";
-}
+
+// get slider.value om in een variabele op te slaan.
+// Mplaats in updateValue functie alle variable
+// If id = bewonersslider: then...
 
 function updateValuePosition(slider) {
 let value = document.getElementById(slider.dataset.valueId);
