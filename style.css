@@ -3,7 +3,8 @@ body.sub {
 }
 
 .navbar {
-  background-image: linear-gradient(to right, #00A5E3, #18BFEA);
+  background-color: #374785;
+  /* background-image: linear-gradient(to right, #A8D0E6, #374785, #24305E); */
   color: #fff;
     /* background-color: #E37222; */
   }
@@ -225,6 +226,7 @@ input[type=checkbox]:active {
 
 body {
     margin: 0 auto;
+    background-color: #A8D0E6;
 }
 
 #wrapper {
