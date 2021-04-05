@@ -184,6 +184,10 @@ input[type=checkbox]:active {
     border: 2px solid #34495E;
 }
 
+#totalprice{
+  font-size: 1.5rem;
+}
+
 
 .footer {
     background-color: #00A5E3;

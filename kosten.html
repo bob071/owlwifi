@@ -55,11 +55,11 @@
     <div id="sliderContainer">
       <div class="tick-slider">
           <div class="tick-slider-header">
-              <h5><label for="bewonersSlider">Totaal aantal huisgenoten</label></h5>
+              <h5><label for="bewonersSlider">Totaal aantal bewoners</label></h5>
               <h5>#</h5>
           </div>
           <div class="tick-slider-value-container">
-              <div id="bewonersLabelMin" class="tick-slider-label">0</div>
+              <div id="bewonersLabelMin" class="tick-slider-label">1</div>
               <div id="bewonersLabelMax" class="tick-slider-label">30 of meer</div>
               <div id="bewonersValue" class="tick-slider-value"></div>
           </div>
@@ -70,7 +70,7 @@
               id="bewonersSlider"
               class="tick-slider-input"
               type="range"
-              min="0"
+              min="1"
               max="30"
               step="1"
               value="7"
@@ -113,10 +113,9 @@
             data-max-label-id="verdiepingenLabelMax"
           />
       </div>
-      <div class="tick-slider">
+      <!-- <div class="tick-slider">
         <div class="tick-slider-header">
-            <h5><label for="sizeSlider"></label>Hoeveel vaste internetkabels willen jullie?</h5>
-            <h5>#</h5>
+            <h5><label for="sizeSlider"></label>Hoeveel vaste internetkabels willen jullie?:</h5>
         </div>
         <div class="tick-slider-value-container">
           <div id="lanLabelMin" class="tick-slider-label">1</div>
@@ -142,20 +141,35 @@
         data-min-label-id="lanLabelMin"
         data-max-label-id="lanLabelMax"
         />
+      </div> -->
+
+      <div class="tick-slider">
+        <div class="tick-slider-header">
+            <h5><label for="checkbox1"></label>We willen buiten WiFi: </h5>
+            <input id="checkbox1" type="checkbox" class="tickbox" />
+        </div>
       </div>
 
+      <div class="tick-slider">
+        <div class="tick-slider-header">
+            <h5><label for="checkbox2"></label>We willen een extra beveiligingskastje: </h5>
+            <input id="checkbox2" type="checkbox" class="tickbox" />
+        </div>
+      </div>
 
-      <div>
-          <input id="checkbox1" type="checkbox" class="tickbox" /> <label for="checkbox1">Optie 1</label>
+      <div class="tick-slider">
+        <div class="tick-slider-header">
+            <h5><label for="checkbox3"></label>We willen vaste internet aansluitingen: </h5>
+            <input id="checkbox3" type="checkbox" class="tickbox" />
+        </div>
       </div>
-      <div>
-      <input id="checkbox2" type="checkbox" class="tickbox" /> <label for="checkbox2">Optie 2</label>
-      </div>
+
       <div id="totalprice">
-          &euro; 0,00
+        &euro; 0,00
       </div>
 
   </div>
+</div>
 
 
 

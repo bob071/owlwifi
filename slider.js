@@ -1,4 +1,3 @@
-
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
@@ -124,22 +123,41 @@ function updatePrice() {
     console.log("updateprice")
     const bewoners = document.getElementById("bewonersSlider").value,
           verdiepingen = document.getElementById("verdiepingenSlider").value,
-          lan = document.getElementById("lanSlider").value,
+          // lan = document.getElementById("lanSlider").value,
           checkbox1 = document.getElementById("checkbox1").checked,
-          checkbox2 = document.getElementById("checkbox2").checked;
+          checkbox2 = document.getElementById("checkbox2").checked,
+          checkbox3 = document.getElementById("checkbox3").checked;
 
-    var price = bewoners * verdiepingen * lan;
+    var price = (verdiepingen*12.50);
+
+    // if (lan>3){
+    //   price += 18
+    // }
+
+    if (bewoners>21){
+      // I add a switch or Dream Machine Pro
+      // And an extra Wifi AP
+      price += 18
+      price += 12,50
+    }
 
     if(checkbox1) {
-        price += 10
+      // outside WiFi AP is more expensive
+        price += 18
     }
 
     if(checkbox2) {
-        price -= 15
+      // Switch or security machine is added
+        price += 18
     }
 
-    document.getElementById("totalprice").innerHTML = `&euro; ${price}`;
-}
+    if(checkbox3){
+      price += 18
+    }
+    var pricepp = (price/bewoners).toFixed(1);
+
+
+    document.getElementById("totalprice").innerHTML = `Indicatie prijs p.p. &euro; ${pricepp}`;}
 
 window.onload = init;
 window.addEventListener("resize", onResize);
