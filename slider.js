@@ -135,7 +135,7 @@ function updatePrice() {
     }
 
     if(checkbox2) {
-        price -= 15
+        price -= 25
     }
 
     document.getElementById("totalprice").innerHTML = `&euro; ${price}`;
