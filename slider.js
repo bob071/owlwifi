@@ -19,9 +19,9 @@ function init() {
         setTicks(slider);
     }
 
-    const checkboxes = document.getElementsByClassName("checkbox");
-    for (let checkbox of checkboxes) {
-        checkbox.oninput = updatePrice;
+    const tickboxes = document.getElementsByClassName("tickbox");
+    for (let tickbox of tickboxes) {
+        tickbox.oninput = updatePrice;
     }
 
     updatePrice();
@@ -135,7 +135,7 @@ function updatePrice() {
     }
 
     if(checkbox2) {
-        price -= 25
+        price -= 15
     }
 
     document.getElementById("totalprice").innerHTML = `&euro; ${price}`;
