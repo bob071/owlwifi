@@ -120,8 +120,8 @@ function onResize() {
 function updatePrice() {
     console.log("updateprice")
     const bewoners = parseInt(document.getElementById("bewonersSlider").value),
-          verdiepingen = parseInt(document.getElementById("verdiepingenSlider").value);
-          // lan = document.getElementById("lanSlider").value,
+          verdiepingen = parseInt(document.getElementById("verdiepingenSlider").value),
+          // lan = parseInt(document.getElementById("lanSlider").value),
           checkbox1 = document.getElementById("checkbox1").checked,
           checkbox2 = document.getElementById("checkbox2").checked,
           checkbox3 = document.getElementById("checkbox3").checked;
