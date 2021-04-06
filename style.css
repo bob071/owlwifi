@@ -14,9 +14,9 @@ body.sub {
     padding: 100px 20px;
     background-color: #A8D0E6;
     /* background-color: #f7cac9; */
-    /* background: url('./img/biljana-martinic-1311746-unsplash.jpg') no-repeat center center; */
+    background: url('./img/bieb.jpg') no-repeat center center;
     background-size: cover;
-    color: #000;
+    color: #fff;
 }
 
 #hero img.logo {
