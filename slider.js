@@ -153,8 +153,7 @@ function updatePrice() {
       price += 18
     }
 
-    var parseInt(pricepp = (price/bewoners).toFixed(1));
-
+    var pricepp = parseInt((price/bewoners).toFixed(1));
 
     document.getElementById("totalprice").innerHTML = `Indicatie prijs p.p. &euro; ${pricepp}`;
 }
