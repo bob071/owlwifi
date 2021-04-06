@@ -58,10 +58,6 @@ body.sub {
     color: #f7cac9;
 }
 
-h3 {
-    font-family: 'Noa';
-}
-
 /* Columns for tablet size and bigger */
 @media (min-width: 767.98px) {
     .main .pakketdescription {
@@ -135,7 +131,7 @@ h3 {
     background-size: cover;
 }
 
-input[type=checkbox]{
+/* input[type=checkbox]{
     display: inline-flex;
     cursor: pointer;
     position: relative;
@@ -153,7 +149,6 @@ input[type=checkbox] {
     -moz-appearance: none;
     -o-appearance: none;
     appearance: none;
-    /* border: 1px solid #34495E; */
     border-radius: 4px;
     outline: none;
     transition-duration: 0.3s;
@@ -178,7 +173,7 @@ input[type=checkbox]:checked + span::before {
 
 input[type=checkbox]:active {
     border: 2px solid #34495E;
-}
+} */
 
 #totalprice{
   font-size: 1.5rem;
@@ -244,7 +239,7 @@ body {
     max-width: 440px;
 
     padding: 56px 40px;
-
+    background-color: none;
     border-radius: 40px;
     margin: auto;
     /* margin-bottom: 48px */
@@ -405,11 +400,8 @@ input[type="range"]::-moz-focus-outer {
     border: 0;
 }
 
-/*
+    /* HANDLE */
 
-    HANDLE
-
-*/
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
 
