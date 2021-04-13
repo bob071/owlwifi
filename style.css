@@ -130,6 +130,7 @@ body.sub {
 }
 
 .links a:hover {
+  -webkit-transform: translate3d(-4px, -4px, );
   -webkit-transform: translate(4px, -4px);
   -moz-transform: translate(4px, -4px);
   -ms-transform: translate(4px, -4px);
@@ -138,7 +139,23 @@ body.sub {
 
 }
 
-
+.links a:hover::before {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+    border-width: inherit;
+    border-color: inherit;
+    border-radius: inherit;
+    border-style: inherit;
+    top: -1px;
+    left: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: inherit;
+    transition: inherit;
+}
 .links a:hover::after {
   content: '';
   position: absolute;
