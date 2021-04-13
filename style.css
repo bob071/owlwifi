@@ -102,8 +102,6 @@ body.sub {
   padding: 0 30px 40px;
 }
 
-
-
 .links a {
     width: 100%;
     height: 100%;
@@ -136,25 +134,32 @@ body.sub {
   -ms-transform: translate(4px, -4px);
   transform: translate(4px, -4px);
   transform-style: preserve-3d;
-
 }
 
-.links a:hover::before {
-    content: '';
-    position: absolute;
-    background-color: inherit;
-    border-width: inherit;
-    border-color: inherit;
-    border-radius: inherit;
-    border-style: inherit;
+.links a.pakketten:hover::before {
+    content: 'Kosten';
+    position: fixed;
+
+    display: inline-block;
     top: -1px;
     left: -1px;
     width: calc(100% + 2px);
     height: calc(100% + 2px);
+
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transition: inherit;
+
     transition: inherit;
+    background-image: url('./img/bottles.jpg');
+    background
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: 100;
+
+
 }
 .links a:hover::after {
   content: '';
