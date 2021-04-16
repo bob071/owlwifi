@@ -152,7 +152,7 @@ body.sub {
 
     transition: inherit;
     background-image: url('./img/bottles.jpg');
-    background
+    /* background-color: white */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
