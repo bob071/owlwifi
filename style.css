@@ -192,6 +192,9 @@ h2:hover::after {
 
     z-index: 100;
 
+    padding-top: 20%;
+    padding-top: calc(20% + 1px);
+
 
 }
 .links a:hover::after {
