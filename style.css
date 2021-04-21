@@ -51,6 +51,37 @@ body.sub {
     background: url('./img/filter.png') repeat, url('./img/bottles.jpg') no-repeat center center;
     background-size: cover;
 }
+/* h2 {
+  border-bottom: 3px solid #f8E9A1;
+} */
+
+/* h2::after {
+  content: "";
+  display: block;
+  width: 20ch;
+  padding-top: 3px;
+  border-bottom: 5px solid #f8E9A1;
+} */
+
+h2::after {
+  content: "";
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  /* background: #fff; */
+  padding-top: 3px;
+  border-bottom: 5px solid #F8E9A1;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+h2:hover::after {
+  width: 100%;
+  left: 0;
+}
 
 .main {
     padding: 80px 20px;
