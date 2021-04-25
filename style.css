@@ -146,6 +146,7 @@ h2:hover::after {
     text-decoration: none;
     box-shadow: 0 0 5px #666;
     border-radius: 2px;
+    border: 1px solid #F8E9A1;
     transition: transform 200ms ease-out;
     z-index: 10;
 }
@@ -194,9 +195,37 @@ h2:hover::after {
 
     padding-top: 20%;
     padding-top: calc(20% + 1px);
-
-
 }
+
+.links a.about:hover::before {
+    content: 'Contact';
+    position: fixed;
+
+    display: inline-block;
+    top: -1px;
+    left: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: inherit;
+
+    transition: inherit;
+    background-image: url('./img/about.jpg');
+    /* background-color: white */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: 100;
+
+    padding-top: 20%;
+    padding-top: calc(20% + 1px);
+    border-radius: 2px;
+    border: 1px solid #F8E9A1;
+}
+
 .links a:hover::after {
   content: '';
   position: absolute;
@@ -210,7 +239,7 @@ h2:hover::after {
   transition: inherit;
 
   z-index: -1;
-  background-color: red;
+  background-color: #F8E9A1;
 
   -webkit-transform: translate(-8px, 8px);
   -moz-transform: translate(-8px, 8px);
