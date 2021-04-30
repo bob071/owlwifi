@@ -123,8 +123,8 @@ function updatePrice() {
           verdiepingen = parseInt(document.getElementById("verdiepingenSlider").value),
           // lan = parseInt(document.getElementById("lanSlider").value),
           checkbox1 = document.getElementById("checkbox1").checked,
-          checkbox2 = document.getElementById("checkbox2").checked,
-          checkbox3 = document.getElementById("checkbox3").checked;
+          checkbox2 = document.getElementById("checkbox2").checked;
+          // checkbox3 = document.getElementById("checkbox3").checked;
 
     var price = verdiepingen*12.50;
 
@@ -133,7 +133,7 @@ function updatePrice() {
     // }
 
     if (bewoners>21){
-      // I add a switch or Dream Machine Pro
+      // I add a switch
       // And an extra Wifi AP
       price += 18
       price += 12,50
@@ -145,13 +145,14 @@ function updatePrice() {
     }
 
     if(checkbox2) {
-      // Switch or security machine is added
+      // Switch is added for lan lines
         price += 18
     }
 
-    if(checkbox3){
-      price += 18
-    }
+    // if(checkbox3){
+    //   // Router (security gateway) is added (prefered)
+    //   price += 18
+    // }
 
     var pricepp = parseInt((price/bewoners).toFixed(1));
 
