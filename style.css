@@ -136,43 +136,27 @@ h2:hover::after {
 }
 
 .links a {
-    width: 100%;
-    height: 100%;
-    display: block;
-    padding: 20% 0;
-    color: #FFF;
-    font-size: 2rem;
-    vertical-align: middle;
-    text-decoration: none;
-    box-shadow: 0 0 5px #666;
-    border-radius: 2px;
-    border: 1px solid #F8E9A1;
-    transition: transform 200ms ease-out;
-    z-index: 10;
+  background-image: url('./img/Fancy.svg');
+  background-size: cover;
+  display: block;
+  padding: 20% 0;
+  font-size: 2rem;
+  vertical-align: middle;
+  text-decoration: none;
+  box-shadow: 0 0 5px #666;
+  border-radius: 2px;
+  border: 1px solid #F8E9A1;
+  transition: transform 200ms ease-out;
+  z-index: 10;
 }
 
-.links a.about {
-    background-image: url('./img/Fancy.svg');
-    display: flex;
-    height: 11.25rem;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-background-position: left;
-    background-position: left;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
 
-.links a.pakketten {
-    background: url('./img/bottles.jpg') no-repeat center center;
-    background-size: cover;
+
+.links a span{
+  color: white;
+  background-color: #374785;
+  border-radius: 5px;
+  padding: 10% 20%;
 }
 
 .links a:hover {
@@ -182,83 +166,6 @@ h2:hover::after {
   -ms-transform: translate(4px, -4px);
   transform: translate(4px, -4px);
   transform-style: preserve-3d;
-}
-
-.links a.pakketten:hover::before {
-    content: 'Kosten';
-    position: fixed;
-
-    display: inline-block;
-    top: -1px;
-    left: -1px;
-    width: calc(100% + 2px);
-    height: calc(100% + 2px);
-
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transition: inherit;
-
-    transition: inherit;
-    background-image: url('./img/bottles.jpg');
-    /* background-color: white */
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    z-index: 100;
-
-    padding-top: 20%;
-    padding-top: calc(20% + 1px);
-}
-
-.links a.about:hover::before {
-    content: 'Contact';
-    position: fixed;
-
-    display: inline-block;
-    top: -1px;
-    left: -1px;
-    width: calc(100% + 2px);
-    height: calc(100% + 2px);
-
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transition: inherit;
-
-    transition: inherit;
-    background-image: url('./img/about.jpg');
-    /* background-color: white */
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    z-index: 100;
-
-    padding-top: 20%;
-    padding-top: calc(20% + 1px);
-    border-radius: 2px;
-    border: 1px solid #F8E9A1;
-}
-
-.links a:hover::after {
-  content: '';
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transition: inherit;
-  transition: inherit;
-
-  z-index: -1;
-  background-color: #F8E9A1;
-
-  -webkit-transform: translate(-8px, 8px);
-  -moz-transform: translate(-8px, 8px);
-  -ms-transform: translate(-8px, 8px);
-  transform: translate(-8px, 8px);
 }
 
 input[type=checkbox]{
@@ -369,7 +276,6 @@ body {
     max-width: 440px;
 
     padding: 56px 40px;
-    background-color: none;
     border-radius: 40px;
     margin: auto;
     /* margin-bottom: 48px */
