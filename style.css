@@ -160,6 +160,7 @@ h2:hover::after {
 .main img{
   max-width: 300px;
   max-height: 250px;
+  no-repeat center center;
 }
 
 .main p.intro {
