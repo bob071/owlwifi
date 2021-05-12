@@ -157,6 +157,7 @@ function updatePrice() {
     var pricepp = parseInt((price/bewoners).toFixed(1));
 
     document.getElementById("totalprice").innerHTML = `Indicatie prijs p.p. &euro; ${pricepp}`;
+    document.getElementById("whatsapp").innerHTML = `Whatsapp ons met jouw prijsindicatie: <a href="https://wa.me/31623748568?text=Onze%20prijsindicatie%20was%20&euro;%20${pricepp}%20p.p."target="_blank"> op 06 23 74 85 68</a>`;
 }
 
 window.onload = init;

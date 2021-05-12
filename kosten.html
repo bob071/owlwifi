@@ -58,146 +58,148 @@
         <h1>Kosten van OWL WiFi</h1>
     </div> -->
 
-    <div class="main text-left", class="mt-2">
-      <h2> Kosten OWL WiFi </h2>
-      <h2 class="mt-5">Prijsopbouw</h2> <!-- <img src="./img/HR-KLMME191098.jpg" class=profile> -->
-      <!-- <img src="./img/Element-1.png" class='divider' /> -->
-      <div class="pakketdescription mt-3">
-          <p class="intro">Afhankelijk van de grootte van het huis, jullie wensen, en het aantal huisgenoten kan dit variëren.</p>
-          <p>Maar om jullie alvast een idee te geven wat dit per persoon kost kun je de onderstaande tool gebruiken. Wij kunnen de apparatuur aan jullie leasen, of jullie kunnen de initiële aanschaf zelf doen. Dat laten we altijd netjes aan jullie over! Factoren die meewegen in de prijs zijn: het aantal gebruikers, de grootte van jullie huis (inclusief het aantal verdiepingen), en jullie specifieke wensen. Samen komen we er altijd uit!</p>
-      </div>
-    </div>
-
-
-    <div id="sliderContainer">
-      <div class="tick-slider">
-          <div class="tick-slider-header">
-              <h5><label for="bewonersSlider">Totaal aantal bewoners</label></h5>
-              <h5>#</h5>
-          </div>
-          <div class="tick-slider-value-container">
-              <div id="bewonersLabelMin" class="tick-slider-label">1</div>
-              <div id="bewonersLabelMax" class="tick-slider-label">30 of meer</div>
-              <div id="bewonersValue" class="tick-slider-value"></div>
-          </div>
-          <div class="tick-slider-background"></div>
-          <div id="bewonersProgress" class="tick-slider-progress"></div>
-          <div id="bewonersTicks" class="tick-slider-tick-container"></div>
-          <input
-              id="bewonersSlider"
-              class="tick-slider-input"
-              type="range"
-              min="1"
-              max="30"
-              step="1"
-              value="7"
-              data-tick-step="1"
-              data-tick-id="bewonersTicks"
-              data-value-id="bewonersValue"
-              data-progress-id="bewonersProgress"
-              data-handle-size="18"
-              data-min-label-id="bewonersLabelMin"
-              data-max-label-id="bewonersLabelMax"
-          />
-      </div>
-      <div class="tick-slider">
-        <div class="tick-slider-header">
-            <h5><label for="sizeSlider"></label>Aantal verdiepingen van jullie huis</h5>
-            <h5>#</h5>
-        </div>
-        <div class="tick-slider-value-container">
-            <div id="verdiepingenLabelMin" class="tick-slider-label">1</div>
-            <div id="verdiepingenLabelMax" class="tick-slider-label">6</div>
-            <div id="verdiepingenValue" class="tick-slider-value"></div>
-        </div>
-
-        <div class="tick-slider-background"></div>
-        <div id="verdiepingenProgress" class="tick-slider-progress"></div>
-        <div id="verdiepingenTicks" class="tick-slider-tick-container"></div>
-        <input
-            id="verdiepingenSlider"
-            class="tick-slider-input"
-            type="range"
-            min="1"
-            max="6"
-            step="1"
-            value="3"
-            data-tick-step="1"
-            data-tick-id="verdiepingenTicks"
-            data-value-id="verdiepingenValue"
-            data-progress-id="verdiepingenProgress"
-            data-handle-size="18"
-            data-min-label-id="verdiepingenLabelMin"
-            data-max-label-id="verdiepingenLabelMax"
-          />
-        </div>
-
-        <div class=tick-slider-value-container>
-            <label for="checkbox1">Willen jullie buiten WiFi bereik?</label>
-            <div>
-              <input id="checkbox1" type="checkbox" class="tickbox">
-              <span></span>
+  <div class="main text-left">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+                <h2 class="mt-5"> De Kosten</h2>
+                  <div class="pakketdescription mt-3">
+                      <p class="intro">Afhankelijk van de grootte van het huis, jullie wensen, en het aantal huisgenoten kan dit variëren.</p>
+                      <p>Maar om jullie alvast een idee te geven wat dit per persoon kost kun je de onderstaande tool gebruiken. Wij kunnen de apparatuur aan jullie leasen, of jullie kunnen de initiële aanschaf zelf doen. Dat laten we altijd netjes aan jullie over! Factoren die meewegen in de prijs zijn: het aantal gebruikers, de grootte van jullie huis (inclusief het aantal verdiepingen), en jullie specifieke wensen. Samen komen we er altijd uit!</p>
+                  </div>
             </div>
-        </div>
-        <div class=tick-slider-value-container>
-            <label for="checkbox2">Willen jullie losse internetkabels?</label>
-            <div>
-              <input id="checkbox2" type="checkbox" class="tickbox" />
-              <span></span>
+            <div class="col-md-8">
+              <div id="sliderContainer">
+                <div class="tick-slider">
+                    <div class="tick-slider-header">
+                        <h5><label for="bewonersSlider">Totaal aantal bewoners</label></h5>
+                        <h5>#</h5>
+                    </div>
+                    <div class="tick-slider-value-container">
+                        <div id="bewonersLabelMin" class="tick-slider-label">1</div>
+                        <div id="bewonersLabelMax" class="tick-slider-label">30 of meer</div>
+                        <div id="bewonersValue" class="tick-slider-value"></div>
+                    </div>
+                    <div class="tick-slider-background"></div>
+                    <div id="bewonersProgress" class="tick-slider-progress"></div>
+                    <div id="bewonersTicks" class="tick-slider-tick-container"></div>
+                    <input
+                        id="bewonersSlider"
+                        class="tick-slider-input"
+                        type="range"
+                        min="1"
+                        max="30"
+                        step="1"
+                        value="7"
+                        data-tick-step="1"
+                        data-tick-id="bewonersTicks"
+                        data-value-id="bewonersValue"
+                        data-progress-id="bewonersProgress"
+                        data-handle-size="18"
+                        data-min-label-id="bewonersLabelMin"
+                        data-max-label-id="bewonersLabelMax"
+                    />
+                </div>
+                <div class="tick-slider">
+                  <div class="tick-slider-header">
+                      <h5><label for="sizeSlider"></label>Aantal verdiepingen van jullie huis</h5>
+                      <h5>#</h5>
+                  </div>
+                  <div class="tick-slider-value-container">
+                      <div id="verdiepingenLabelMin" class="tick-slider-label">1</div>
+                      <div id="verdiepingenLabelMax" class="tick-slider-label">6</div>
+                      <div id="verdiepingenValue" class="tick-slider-value"></div>
+                  </div>
+
+                  <div class="tick-slider-background"></div>
+                  <div id="verdiepingenProgress" class="tick-slider-progress"></div>
+                  <div id="verdiepingenTicks" class="tick-slider-tick-container"></div>
+                  <input
+                      id="verdiepingenSlider"
+                      class="tick-slider-input"
+                      type="range"
+                      min="1"
+                      max="6"
+                      step="1"
+                      value="3"
+                      data-tick-step="1"
+                      data-tick-id="verdiepingenTicks"
+                      data-value-id="verdiepingenValue"
+                      data-progress-id="verdiepingenProgress"
+                      data-handle-size="18"
+                      data-min-label-id="verdiepingenLabelMin"
+                      data-max-label-id="verdiepingenLabelMax"
+                    />
+                </div>
+                <div class=tick-slider-value-container>
+                    <label for="checkbox1">Willen jullie buiten WiFi bereik?</label>
+                    <div>
+                      <input id="checkbox1" type="checkbox" class="tickbox">
+                      <span></span>
+                    </div>
+                </div>
+                <div class=tick-slider-value-container>
+                    <label for="checkbox2">Willen jullie losse internetkabels?</label>
+                    <div>
+                      <input id="checkbox2" type="checkbox" class="tickbox" />
+                      <span></span>
+                    </div>
+                </div>
+              <!-- <div class=tick-slider-value-container>
+                  <label for="checkbox3">Optie 3!</label> <input id="checkbox3" type="checkbox" class="tickbox" />
+              </div> -->
+                <div id="totalprice">
+                  &euro; 0,00
+                </div>
+                <div id="whatsapp">
+                  Whatsapp ons met jouw prijsindicatie: </a>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- <div class=tick-slider-value-container>
-            <label for="checkbox3">Optie 3!</label> <input id="checkbox3" type="checkbox" class="tickbox" />
-        </div> -->
-
-        <div id="totalprice">
-          &euro; 0,00
-        </div>
-  </div>
-
-  <div class="container links">
-      <div class="row">
+      </div>
+      <div class="container links">
+        <div class="row">
           <div class="col-md">
-              <a href="./kosten.html" class="pakketten">
-                  <span>Kosten</span>
-              </a>
+            <a href="./kosten.html" class="pakketten">
+              <span>Kosten</span>
+            </a>
           </div>
           <div class="col-md">
               <a href="./overons.html" class="about">
                   <span>Contact</span> <br />
               </a>
           </div>
+        </div>
       </div>
-  </div>
-
-  <div class="footer text-left">
-      <div class="container">
+      <div class="footer text-left">
+        <div class="container">
           <div class="row">
-              <div class="col-md">
-                  <h5>OWL WiFi</h5>
-                  <a href="mailto:owlwifi@bomulder.com?subject=OWL_WiFi Website link">owlwifi@bomulder.com</a><br /><br />
-              </div>
-              <div class="col-md">
-                  <h5>Info</h5>
-                  <b>KVK Nummer:</b> 74641662<br />
-                  <b>BTW nummer:</b> NL859977985B01
-              </div>
-              <div class="col-md">
-                  <h5>Online</h5>
-                  <a href="https://www.instagram.com/owlwifi/" target="_blank">Instagram</a>
-              </div>
-              <div class="col-md">
-                  <h5>Partners / links </h5>
-                  <a href="https://www.bomulder.com/"target="_blank">Bob IT & Design Solutions</a><br />
-                  <!-- <a href="https://www.lesgenereux.nl"target="_blank">Wijnimport Les Genereux</a><br />
-                  <a href="https://www.bootjesenbroodjes.nl"target="_blank">Bootjes & Broodjes</a><br /> -->
-                  <a href="https://www.ui.com/"target="_blank">Ubiquiti Suite</a>
-              </div>
+            <div class="col-md">
+                <h5>OWL WiFi</h5>
+                <a href="mailto:owlwifi@bomulder.com?subject=OWL_WiFi Website link">owlwifi@bomulder.com</a><br />
+                <a href="https://wa.me/31623748568">06 23 74 85 68</a><br />
+            </div>
+            <div class="col-md">
+                <h5>Info</h5>
+                <b>KVK Nummer:</b> 74641662<br />
+                <b>BTW nummer:</b> NL859977985B01
+            </div>
+            <div class="col-md">
+                <h5>Online</h5>
+                <a href="https://www.instagram.com/owlwifi/" target="_blank">Instagram</a>
+            </div>
+            <div class="col-md">
+                <h5>Partners / links </h5>
+                <a href="https://www.bomulder.com/"target="_blank">Bob IT & Design Solutions</a><br />
+                <!-- <a href="https://www.lesgenereux.nl"target="_blank">Wijnimport Les Genereux</a><br />
+                <a href="https://www.bootjesenbroodjes.nl"target="_blank">Bootjes & Broodjes</a><br /> -->
+                <a href="https://www.ui.com/"target="_blank">Ubiquiti Suite</a>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-
-
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>

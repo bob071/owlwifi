@@ -22,18 +22,21 @@ body.sub {
   max-width: 600px;
   margin: 0 auto;
   background-color: #F8E9A1;
+  color: black;
   border-radius: 5px;
 }
 #hero2 p {
   max-width: 600px;
   margin: 0 auto;
   background-color: #F8E9A1;
+  color: black;
   border-radius: 5px;
 }
 #hero3 p {
   max-width: 600px;
   margin: 0 auto;
   background-color: #F8E9A1;
+  color: black;
   border-radius: 5px;
 }
 
@@ -140,7 +143,7 @@ h2:hover::after {
 
 .main {
     padding: 80px 20px;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -153,6 +156,10 @@ h2:hover::after {
     .main .pakketdescription {
         column-count: 1;
     }
+}
+.main img{
+  max-width: 300px;
+  max-height: 250px;
 }
 
 .main p.intro {
@@ -186,6 +193,9 @@ h2:hover::after {
 
 .links .col-md {
   padding: 0 30px 40px;
+}
+.lead p {
+  color: black;
 }
 
 .links a {
@@ -270,6 +280,7 @@ input[type=checkbox]:checked ~ span::before {
 
 #totalprice{
   font-size: 1.5rem;
+    text-align: center;
 }
 
 .footer {
