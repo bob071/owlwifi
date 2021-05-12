@@ -13,9 +13,28 @@ body.sub {
     text-align: center;
     padding: 100px 20px;
     background-color: #A8D0E6;
-    background: url('./img/bieb.jpg') no-repeat center center;
+    background: url('./img/achtergrond_gg.png') no-repeat center center;
     background-size: cover;
     color: #fff;
+}
+
+#hero p {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #F8E9A1;
+  border-radius: 5px;
+}
+#hero2 p {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #F8E9A1;
+  border-radius: 5px;
+}
+#hero3 p {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #F8E9A1;
+  border-radius: 5px;
 }
 
 #hero img.logo {
@@ -26,14 +45,40 @@ body.sub {
     filter: drop-shadow( 3px 3px 2px #374785);
   /* Similar syntax to box-shadow  rgba(0, 0, 0, .7)*/
 }
+#hero2 {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #A8D0E6;
+    background: url('./img/achtergrond_rg.png') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
 
-#hero p {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #F8E9A1;
-    border-radius: 5px;
-    /* text-shadow: 2px 2px 8px #000000; */
-    color: black;
+#hero2 img.logo {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 3px 3px 2px #374785);
+  /* Similar syntax to box-shadow  rgba(0, 0, 0, .7)*/
+}
+
+#hero3 {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #A8D0E6;
+    background: url('./img/achtergrond_bg.png') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+
+#hero3 img.logo {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 3px 3px 2px #374785);
+  /* Similar syntax to box-shadow  rgba(0, 0, 0, .7)*/
 }
 
 #title {
@@ -45,14 +90,33 @@ body.sub {
     color: #F8E9A1;
 }
 
-#title.about {
-    background: url('./img/about.jpg') no-repeat center center;
-    background-size: cover;
+#title p {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #F8E9A1;
+    border-radius: 5px;
+    /* text-shadow: 2px 2px 8px #000000; */
+    color: black;
 }
 
-#title.pakketten {
-    background: url('./img/filter.png') repeat, url('./img/bottles.jpg') no-repeat center center;
+/* #title.about {
+    background: url('./img/achtergrond_bg.png') no-repeat center center;
     background-size: cover;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #A8D0E6;
+    color: #fff;
+} */
+
+
+
+#title.pakketten {
+    background: url('./img/achtergrond_rg.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #A8D0E6;
+    color: #fff;
 }
 
 h2::after {
@@ -87,7 +151,7 @@ h2:hover::after {
 /* Columns for tablet size and bigger */
 @media (min-width: 767.98px) {
     .main .pakketdescription {
-        column-count: 2;
+        column-count: 1;
     }
 }
 
@@ -190,7 +254,7 @@ input[type=checkbox]:checked {
 input[type=checkbox]:active {
     border: 2px solid #34495E;
 }
-/* input[type=checkbox]:checked span::before {
+input[type=checkbox]:checked span::before {
     content: '\2713';
     display: block;
     text-align: center;
@@ -199,7 +263,7 @@ input[type=checkbox]:active {
     left: 0.7rem;
     top: 0.2rem;
     z-index: 100;
-} */
+}
 
 
 
