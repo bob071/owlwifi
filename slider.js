@@ -123,20 +123,17 @@ function updatePrice() {
           verdiepingen = parseInt(document.getElementById("verdiepingenSlider").value),
           // lan = parseInt(document.getElementById("lanSlider").value),
           checkbox1 = document.getElementById("checkbox1").checked,
-          checkbox2 = document.getElementById("checkbox2").checked;
-          // checkbox3 = document.getElementById("checkbox3").checked;
+          checkbox2 = document.getElementById("checkbox2").checked,
+          checkbox3 = document.getElementById("checkbox3").checked;
 
-    var price = verdiepingen*12.50;
+    var price = verdiepingen*15;
 
-    // if (lan>3){
-    //   price += 18
-    // }
 
     if (bewoners>21){
       // I add a switch
       // And an extra Wifi AP
-      price += 18
-      price += 12,50
+      price += 20
+      price += 15
     }
 
     if(checkbox1) {
@@ -149,15 +146,19 @@ function updatePrice() {
         price += 18
     }
 
-    // if(checkbox3){
-    //   // Router (security gateway) is added (prefered)
-    //   price += 18
-    // }
+    if(checkbox3){
+      // WiFi 6 included
+      price += verdiepingen*3,75
+      if(bewoners>21){
+        price += 3,75
+      }
+      // price += 15
+    }
 
     var pricepp = parseInt((price/bewoners).toFixed(1));
 
     document.getElementById("totalprice").innerHTML = `Indicatie prijs p.p. &euro; ${pricepp}`;
-    document.getElementById("whatsapp").innerHTML = `Whatsapp ons met jouw prijsindicatie: <a href="https://wa.me/31623748568?text=Onze%20prijsindicatie%20was%20&euro;%20${pricepp}%20p.p."target="_blank"> op 06 23 74 85 68</a>`;
+    document.getElementById("whatsapp").innerHTML = `Whatsapp ons met jouw prijsindicatie: <a href="https://wa.me/31623748568?text=Onze%20prijsindicatie%20was%20&euro;%20${pricepp}%20p.p.%20met%20${verdiepingen}%20verdiepingen%20en%20${bewoners}%20bewoners%20"target="_blank"> op 06 23 74 85 68</a>`;
 }
 
 window.onload = init;

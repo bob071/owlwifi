@@ -18,6 +18,9 @@ body.sub {
     color: #fff;
 }
 
+.grid{
+  text-align: center;
+}
 #hero p {
   max-width: 600px;
   margin: 0 auto;
@@ -141,6 +144,11 @@ h2:hover::after {
   left: 0;
 }
 
+.img-center {
+    display: block;
+    margin: 0 auto;
+}
+
 .main {
     padding: 80px 20px;
     max-width: 900px;
@@ -160,9 +168,9 @@ h2:hover::after {
 .main img{
   max-width: 300px;
   max-height: 250px;
-  no-repeat center center;
+  padding: 20px;
+  text-align: center;
 }
-
 .main p.intro {
     font-weight: 700;
 }
