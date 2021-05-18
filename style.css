@@ -140,7 +140,7 @@ h2::after {
 }
 
 h2:hover::after {
-  width: 65%;
+  width: 100%;
   left: 0;
 }
 
@@ -168,8 +168,15 @@ h2:hover::after {
 .main img{
   max-width: 300px;
   max-height: 250px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
+}
+
+.img-square-center{
+  display: block;
+  margin: 0 auto;
+  width:200px;
+  height:200px;
 }
 .main p.intro {
     font-weight: 700;
